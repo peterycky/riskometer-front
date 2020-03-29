@@ -84,6 +84,21 @@ p {
   text-align: left;
 }
 
+.info-detail--no-detection {
+  margin-top: 80px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.info-detail--no-detection > h2 {
+  margin-top: 85px;
+}
+
+.info-detail--no-detection > ul {
+  text-align: left;
+  margin-left: 20px;
+}
+
 .info-card {
   margin-bottom: 30px;
 }

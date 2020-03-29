@@ -119,7 +119,7 @@ export default function Info(activity) {
               gutterBottom
               className="info-detail--data"
             >
-              {duration + "minut"}
+              {duration + " min"}
             </Typography>
 
             <Typography variant="subtitle2" className="info-detail--title">

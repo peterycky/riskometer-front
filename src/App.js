@@ -3,6 +3,7 @@ import './App.css';
 
 import PreloadScreen from './Components/PreloadScreen.js'
 import InfectionInfo from './Components/InfectionInfo.js'
+import NoInfection from './Components/NoInfection.js'
 import axios from 'axios';
 
 // import Button from "@material-ui/core/Button";
@@ -19,18 +20,19 @@ function App() {
     console.log("Mounted, acquiring info...")
     
     const uri = window.location.search.slice(2);
-    console.log(window.location)
-    console.log(uri)
+    // console.log(window.location)
+    // console.log(uri)
     let endpoint = 'https://jsonvir.iwareprint.eu/status/' + uri
 
     let query = () => {
+      console.log('Sending request to server...')
       axios.get(endpoint)
       .then(response => {
-        // console.log(response.data)
+        console.log(response.data)
         if (response.data.waiting === false) {
+          setData(response.data)
           setDataAcquired(true)
           clearInterval(interval)
-          setData(response.data)
           console.log('Data acquired successfully')
         }
       })
@@ -47,8 +49,11 @@ function App() {
     // }, 10000)
   }, [])
 
-  if(dataAcquired === true) {
-    screen = <InfectionInfo list={data} />
+  if(dataAcquired === true && data) {
+    // console.log(data)
+    data.activities.length === 0
+      ? (screen = <NoInfection />)
+      : (screen = <InfectionInfo list={data} />);
   } else {
     screen = <PreloadScreen err={transErr}/>
   }

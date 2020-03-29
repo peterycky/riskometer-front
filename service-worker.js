@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/riskometer-front/precache-manifest.174ffe2ab43c7fd0dbdddfbc21a5d8ac.js"
+  "/riskometer-front/precache-manifest.cc283824aaaa57cfbf692e4ce04cbe8e.js"
 );
 
 self.addEventListener('message', (event) => {

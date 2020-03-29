@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b28829026a6098704a0afbe2d5a72366",
+    "revision": "7b20b6a7109ebbfbedc29335145d8355",
     "url": "/riskometer-front/index.html"
   },
   {
-    "revision": "c0ab5dfe99e39e1d66a5",
+    "revision": "836a4457b55ffbcc8167",
     "url": "/riskometer-front/static/css/main.cbe0525a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/riskometer-front/static/js/2.e6df33bf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c0ab5dfe99e39e1d66a5",
-    "url": "/riskometer-front/static/js/main.3ab3f77b.chunk.js"
+    "revision": "836a4457b55ffbcc8167",
+    "url": "/riskometer-front/static/js/main.0067dace.chunk.js"
   },
   {
     "revision": "5a6c863daf8c5468e22c",

@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/riskometer-front/static/css/main.aaaf4589.chunk.css",
-    "main.js": "/riskometer-front/static/js/main.78b2ba0b.chunk.js",
-    "main.js.map": "/riskometer-front/static/js/main.78b2ba0b.chunk.js.map",
+    "main.js": "/riskometer-front/static/js/main.397059c7.chunk.js",
+    "main.js.map": "/riskometer-front/static/js/main.397059c7.chunk.js.map",
     "runtime-main.js": "/riskometer-front/static/js/runtime-main.c2e994fb.js",
     "runtime-main.js.map": "/riskometer-front/static/js/runtime-main.c2e994fb.js.map",
     "static/js/2.b8dd755e.chunk.js": "/riskometer-front/static/js/2.b8dd755e.chunk.js",
     "static/js/2.b8dd755e.chunk.js.map": "/riskometer-front/static/js/2.b8dd755e.chunk.js.map",
     "index.html": "/riskometer-front/index.html",
-    "precache-manifest.a613c9ece51f19aeeb887fa9f0c652d3.js": "/riskometer-front/precache-manifest.a613c9ece51f19aeeb887fa9f0c652d3.js",
+    "precache-manifest.997d889b1c202f9003af2aec7418de2c.js": "/riskometer-front/precache-manifest.997d889b1c202f9003af2aec7418de2c.js",
     "service-worker.js": "/riskometer-front/service-worker.js",
     "static/css/main.aaaf4589.chunk.css.map": "/riskometer-front/static/css/main.aaaf4589.chunk.css.map",
     "static/js/2.b8dd755e.chunk.js.LICENSE.txt": "/riskometer-front/static/js/2.b8dd755e.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.c2e994fb.js",
     "static/js/2.b8dd755e.chunk.js",
     "static/css/main.aaaf4589.chunk.css",
-    "static/js/main.78b2ba0b.chunk.js"
+    "static/js/main.397059c7.chunk.js"
   ]
 }

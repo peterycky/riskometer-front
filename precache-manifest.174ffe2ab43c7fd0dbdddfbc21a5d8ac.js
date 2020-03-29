@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5122ddd3a5f35ffd469c1754ce714893",
+    "revision": "b28829026a6098704a0afbe2d5a72366",
     "url": "/riskometer-front/index.html"
   },
   {
-    "revision": "fe57806feadd002bdc15",
-    "url": "/riskometer-front/static/css/main.aaaf4589.chunk.css"
+    "revision": "c0ab5dfe99e39e1d66a5",
+    "url": "/riskometer-front/static/css/main.cbe0525a.chunk.css"
   },
   {
-    "revision": "b0cc9648823949d3334d",
-    "url": "/riskometer-front/static/js/2.b8dd755e.chunk.js"
+    "revision": "a5d2370afa25a51093d9",
+    "url": "/riskometer-front/static/js/2.e6df33bf.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/riskometer-front/static/js/2.b8dd755e.chunk.js.LICENSE.txt"
+    "url": "/riskometer-front/static/js/2.e6df33bf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fe57806feadd002bdc15",
-    "url": "/riskometer-front/static/js/main.397059c7.chunk.js"
+    "revision": "c0ab5dfe99e39e1d66a5",
+    "url": "/riskometer-front/static/js/main.3ab3f77b.chunk.js"
   },
   {
     "revision": "5a6c863daf8c5468e22c",

@@ -17,7 +17,11 @@ function App() {
 
   useEffect(() => {
     console.log("Mounted, acquiring info...")
-    let endpoint = 'https://jsonvir.iwareprint.eu/status' + window.location.pathname
+    
+    const uri = window.location.search.slice(2);
+    console.log(window.location)
+    console.log(uri)
+    let endpoint = 'https://jsonvir.iwareprint.eu/status/' + uri
 
     let query = () => {
       axios.get(endpoint)

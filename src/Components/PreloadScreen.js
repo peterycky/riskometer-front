@@ -1,5 +1,6 @@
 import React from 'react'
 import HashLoader from "react-spinners/HashLoader";
+import logo from './Logo.png'
 
 const preload = (props) => {
   let errMsg
@@ -15,11 +16,7 @@ const preload = (props) => {
 
   return (
     <div className="preloader">
-      <img
-        src={process.env.PUBLIC_URL + "/logo.png"}
-        alt="Logo"
-        className="preloader--img"
-      />
+      <img src={logo} alt="Logo" className="preloader--img" />
       <div className="preloader-text">
         <h1>Przetwarzamy Twoje dane</h1>
         <h2 className="color--accent">Proszę czekać</h2>

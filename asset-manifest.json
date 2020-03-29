@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/riskometer-front/static/css/main.aaaf4589.chunk.css",
+    "main.js": "/riskometer-front/static/js/main.670412cf.chunk.js",
+    "main.js.map": "/riskometer-front/static/js/main.670412cf.chunk.js.map",
+    "runtime-main.js": "/riskometer-front/static/js/runtime-main.c2e994fb.js",
+    "runtime-main.js.map": "/riskometer-front/static/js/runtime-main.c2e994fb.js.map",
+    "static/js/2.cb273620.chunk.js": "/riskometer-front/static/js/2.cb273620.chunk.js",
+    "static/js/2.cb273620.chunk.js.map": "/riskometer-front/static/js/2.cb273620.chunk.js.map",
+    "index.html": "/riskometer-front/index.html",
+    "precache-manifest.95bab2e4c7e25e4cc2dcce2d7cfdf555.js": "/riskometer-front/precache-manifest.95bab2e4c7e25e4cc2dcce2d7cfdf555.js",
+    "service-worker.js": "/riskometer-front/service-worker.js",
+    "static/css/main.aaaf4589.chunk.css.map": "/riskometer-front/static/css/main.aaaf4589.chunk.css.map",
+    "static/js/2.cb273620.chunk.js.LICENSE.txt": "/riskometer-front/static/js/2.cb273620.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2e994fb.js",
+    "static/js/2.cb273620.chunk.js",
+    "static/css/main.aaaf4589.chunk.css",
+    "static/js/main.670412cf.chunk.js"
+  ]
+}

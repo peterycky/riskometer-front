@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7122769b75d9ca4363272cb0579607a6",
+    "revision": "a6d89bc6f1404078b923d85a3451bb97",
     "url": "/riskometer-front/index.html"
   },
   {
-    "revision": "51c0fb21b2a50d9b039e",
+    "revision": "40174ce4cff579823ebc",
     "url": "/riskometer-front/static/css/main.cbe0525a.chunk.css"
   },
   {
-    "revision": "38360f2046edb441bd78",
-    "url": "/riskometer-front/static/js/2.d2c6913a.chunk.js"
+    "revision": "f7e5f7fd9dce00380963",
+    "url": "/riskometer-front/static/js/2.fef44bfa.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/riskometer-front/static/js/2.d2c6913a.chunk.js.LICENSE.txt"
+    "url": "/riskometer-front/static/js/2.fef44bfa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "51c0fb21b2a50d9b039e",
-    "url": "/riskometer-front/static/js/main.1b71daa5.chunk.js"
+    "revision": "40174ce4cff579823ebc",
+    "url": "/riskometer-front/static/js/main.bb2b0bd3.chunk.js"
   },
   {
     "revision": "5a6c863daf8c5468e22c",

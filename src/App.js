@@ -4,7 +4,6 @@ import './App.css';
 import PreloadScreen from './Components/PreloadScreen.js'
 import InfectionInfo from './Components/InfectionInfo.js'
 import NoInfection from './Components/NoInfection.js'
-import axios from 'axios';
 
 // import Button from "@material-ui/core/Button";
 
@@ -22,48 +21,29 @@ function App() {
     const uri = window.location.search.slice(2);
     let endpoint = 'https://jsonvir.iwareprint.eu/status/' + uri
 
-    // function query() {
-    //   console.log('Sending request to server...')
-    //   axios.get(endpoint)
-    //   .then(response => {
-    //     console.log(response.data)
-
-    //     if (response.data.waiting === false) {
-    //       setData(response.data)
-    //       setDataAcquired(true)
-    //       console.log('Data acquired successfully')
-    //       clearInterval(interval)
-    //     }
-    //   })
-    //   .catch(error => {
-    //     console.warn(error)
-    //     setTransErr(true)
-    //   });
-    // }
-
     let query = () => {
       console.log("Sending request to server...");
       fetch(endpoint)
         .then(resp => {
-          resp.json().then(data => {
+           resp.json().then(data => {
             if (data.waiting === false) {
               setData(data);
               setDataAcquired(true);
-              // clearInterval(interval)
               console.log("Data acquired successfully");
             } else {
+              setTransErr(false)
               setTimeout(() => query(), 3000);
             }
           });
         })
         .catch(error => {
-          // console.warn(error)
+          console.warn(error)
           setTransErr(true);
           setTimeout(() => query(), 3000);
         });
     };
 
-    query()
+    query();
   }, [])
 
   if(dataAcquired === true && data) {

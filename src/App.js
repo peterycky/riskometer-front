@@ -20,33 +20,50 @@ function App() {
     console.log("Mounted, acquiring info...")
     
     const uri = window.location.search.slice(2);
-    // console.log(window.location)
-    // console.log(uri)
     let endpoint = 'https://jsonvir.iwareprint.eu/status/' + uri
 
+    // function query() {
+    //   console.log('Sending request to server...')
+    //   axios.get(endpoint)
+    //   .then(response => {
+    //     console.log(response.data)
+
+    //     if (response.data.waiting === false) {
+    //       setData(response.data)
+    //       setDataAcquired(true)
+    //       console.log('Data acquired successfully')
+    //       clearInterval(interval)
+    //     }
+    //   })
+    //   .catch(error => {
+    //     console.warn(error)
+    //     setTransErr(true)
+    //   });
+    // }
+
     let query = () => {
-      console.log('Sending request to server...')
-      axios.get(endpoint)
-      .then(response => {
-        console.log(response.data)
-        if (response.data.waiting === false) {
-          setData(response.data)
-          setDataAcquired(true)
-          clearInterval(interval)
-          console.log('Data acquired successfully')
-        }
-      })
-      .catch(error => {
-        // console.warn(error)
-        setTransErr(true)
-      });
-    }
+      console.log("Sending request to server...");
+      fetch(endpoint)
+        .then(resp => {
+          resp.json().then(data => {
+            if (data.waiting === false) {
+              setData(data);
+              setDataAcquired(true);
+              // clearInterval(interval)
+              console.log("Data acquired successfully");
+            } else {
+              setTimeout(() => query(), 3000);
+            }
+          });
+        })
+        .catch(error => {
+          // console.warn(error)
+          setTransErr(true);
+          setTimeout(() => query(), 3000);
+        });
+    };
 
-    const interval = setInterval(query(), 3000)
-
-    // setTimeout(()=> {
-      // setDataAcquired(true)
-    // }, 10000)
+    query()
   }, [])
 
   if(dataAcquired === true && data) {

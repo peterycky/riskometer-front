@@ -1,3 +1,4 @@
+/* eslint-disable no-template-curly-in-string */
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
@@ -48,7 +49,7 @@ export default function Info(activity) {
 
   const placeFrom = activity.data.placeFrom.placeDesc 
   const placeTo = activity.data.placeTo.placeDesc 
-  const date = day + "-" + month + "-" + year
+  const date = `${day}-${month}-${year}`
   const hour = activity.data.timeFrom.slice(-4)
   const duration = activity.data.timeDuration
   const type = activity.data.activityTypeTitle
@@ -67,8 +68,7 @@ export default function Info(activity) {
               })}
               onClick={handleExpandClick}
               aria-expanded={expanded}
-              aria-label="show more"
-            >
+              aria-label="show more">
               <ExpandMoreIcon />
             </IconButton>
           }
@@ -81,61 +81,37 @@ export default function Info(activity) {
             <Typography variant="subtitle2" className="info-detail--title">
               Miejsce Rozpoczęcia:
             </Typography>
-            <Typography
-              variant="body2"
-              gutterBottom
-              className="info-detail--data"
-            >
+            <Typography variant="body2" gutterBottom className="info-detail--data">
               {placeFrom}
             </Typography>
 
             <Typography variant="subtitle2" className="info-detail--title">
               Miejsce Zakończenia:
             </Typography>
-            <Typography
-              variant="body2"
-              gutterBottom
-              className="info-detail--data"
-            >
+            <Typography variant="body2" gutterBottom className="info-detail--data">
               {placeTo}
             </Typography>
 
             <Typography variant="subtitle2" className="info-detail--title">
               Data i Godzina:
             </Typography>
-            <Typography
-              variant="body2"
-              gutterBottom
-              className="info-detail--data"
-            >
-              {date + " " + hour}
+            <Typography variant="body2" gutterBottom className="info-detail--data">
+              {`${date} ${hour}`}
             </Typography>
 
             <Typography variant="subtitle2" className="info-detail--title">
               Czas trwania kontaktu:
             </Typography>
-            <Typography
-              variant="body2"
-              gutterBottom
-              className="info-detail--data"
-            >
-              {duration + " min"}
+            <Typography variant="body2" gutterBottom className="info-detail--data">
+              {`${duration} min`}
             </Typography>
 
             <Typography variant="subtitle2" className="info-detail--title">
               Typ kontaktu:
             </Typography>
-            <Typography
-              variant="body2"
-              gutterBottom
-              className="info-detail--data"
-            >
+            <Typography variant="body2" gutterBottom className="info-detail--data">
               {type}
             </Typography>
-            {/* <div>
-              <h3 className="info-detail--title">Typ kontaktu:</h3>
-              <p className="info-detail--data">{type}</p>
-            </div> */}
           </CardContent>
         </Collapse>
       </Card>

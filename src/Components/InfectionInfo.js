@@ -3,9 +3,7 @@ import React from 'react'
 import Info from './InfoDetail';
 import logo from './Logo.png'
 
-const infectionInfo = (props) => {
-  // console.log(props);
-
+function infectionInfo(props) {
   return (
     <div className="info">
       <img src={logo} alt="Logo" className="preloader--img" />

@@ -1,8 +1,7 @@
-import React from "react";
-import logo from "./Logo.png";
+import React from "react"
+import logo from "./Logo.png"
 
 function infectionInfo() {
-  // console.log(props);
 
   return (
     <div className="info">
@@ -22,7 +21,7 @@ function infectionInfo() {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default infectionInfo;
+export default infectionInfo

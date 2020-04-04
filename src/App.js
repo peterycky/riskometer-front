@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import './App.css';
+import React, { useState, useEffect } from "react"
+import './App.css'
 
 import PreloadScreen from './Components/PreloadScreen.js'
 import InfectionInfo from './Components/InfectionInfo.js'
@@ -14,25 +14,25 @@ function App() {
   const [transErr, setTransErr] = useState()
 
   useEffect(() => {
-    console.log("Mounted, acquiring info...");
-    const uri = window.location.search.slice(2);
+    console.log("Mounted, acquiring info...")
+    const uri = window.location.search.slice(2)
 
     function queryConstrue() {
       query(uri)
         .then(data => {
-          setTransErr();
+          setTransErr()
 
           if (!data.waiting) {
-            setData(data);
-            setDataAcquired(true);
-            console.log("Data acquired successfully");
+            setData(data)
+            setDataAcquired(true)
+            console.log("Data acquired successfully")
           } else {
-            setTimeout(queryConstrue(), 3000);
+            setTimeout(queryConstrue(), 3000)
           }
         })
         .catch(error => {
-          setTransErr(error);
-          setTimeout(queryConstrue(), 3000);
+          setTransErr(error)
+          setTimeout(queryConstrue(), 3000)
         });
     }
 
@@ -41,7 +41,7 @@ function App() {
 
   useEffect(() => {
     if (transErr) {
-      console.warn(transErr);
+      console.warn(transErr)
     }
   }, [transErr]);
 
@@ -56,4 +56,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

@@ -1,18 +1,8 @@
 import React from 'react'
-import HashLoader from "react-spinners/HashLoader";
+import HashLoader from "react-spinners/HashLoader"
 import logo from './Logo.png'
 
 const preload = (props) => {
-  // let errMsg
-
-  // if(props.err === true) {
-  //   errMsg = <p className="color--danger preloader-sub--no-margin">
-  //     Ups... Coś poszło nie tak
-  //   </p>;
-  //   // console.log('error wykryty')
-  // } else {
-  //   // console.log('error NIE wykryty')
-  // }
 
   return (
     <div className="preloader">
@@ -32,7 +22,7 @@ const preload = (props) => {
         props.err && <p className="color--danger preloader-sub--no-margin">Ups... Coś poszło nie tak</p>
       }
     </div>
-  );
+  )
 }
 
 export default preload 

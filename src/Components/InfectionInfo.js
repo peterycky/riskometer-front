@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Info from './InfoDetail';
+import Info from './InfoDetail'
 import logo from './Logo.png'
 
 function infectionInfo(props) {
@@ -20,7 +20,7 @@ function infectionInfo(props) {
         {props.list.activities ? (
           <div>
             {props.list.activities.map(activity => {
-              return <Info key={activity.id} data={activity} />;
+              return <Info key={activity.id} data={activity} />
             })}
           </div>
         ) : (
@@ -28,7 +28,7 @@ function infectionInfo(props) {
         )}
       </div>
     </div>
-  );
+  )
 }
 
 export default infectionInfo

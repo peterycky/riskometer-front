@@ -1,15 +1,15 @@
 /* eslint-disable no-template-curly-in-string */
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import clsx from "clsx";
-import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
-import CardMedia from "@material-ui/core/CardMedia";
-import CardContent from "@material-ui/core/CardContent";
-import Collapse from "@material-ui/core/Collapse";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import React from "react"
+import { makeStyles } from "@material-ui/core/styles"
+import clsx from "clsx"
+import Card from "@material-ui/core/Card"
+import CardHeader from "@material-ui/core/CardHeader"
+import CardMedia from "@material-ui/core/CardMedia"
+import CardContent from "@material-ui/core/CardContent"
+import Collapse from "@material-ui/core/Collapse"
+import IconButton from "@material-ui/core/IconButton"
+import Typography from "@material-ui/core/Typography"
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   expandOpen: {
     transform: "rotate(180deg)"
   },
-}));
+}))
 
 export default function Info(activity) {
   // console.log(activity.data)
@@ -38,7 +38,7 @@ export default function Info(activity) {
   const [expanded, setExpanded] = React.useState(false)
 
   const handleExpandClick = () => {
-    setExpanded(!expanded);
+    setExpanded(!expanded)
   }
 
   const title = activity.data.placeFrom.placeDesc.length >= 21 ? activity.data.placeFrom.placeDesc.slice(0, 17) + "..." : activity.data.placeFrom.placeDesc
@@ -116,7 +116,7 @@ export default function Info(activity) {
         </Collapse>
       </Card>
     </div>
-  );
+  )
 }
 
 // export default info

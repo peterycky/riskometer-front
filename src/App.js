@@ -11,21 +11,39 @@ import query from "./query"
 function App() {
   const [dataAcquired, setDataAcquired ]= useState(false)
   const [data, setData] = useState({})
-  const [transErr, setTransErr] = useState(false)
+  const [transErr, setTransErr] = useState()
 
   useEffect(() => {
-    console.log("Mounted, acquiring info...")
+    console.log("Mounted, acquiring info...");
+    const uri = window.location.search.slice(2);
 
-    const params = {
-      uri: window.location.search.slice(2),
-      data: setData,
-      dataAcquired: setDataAcquired,
-      transError: setTransErr
+    function queryConstrue() {
+      query(uri)
+        .then(data => {
+          setTransErr();
+
+          if (!data.waiting) {
+            setData(data);
+            setDataAcquired(true);
+            console.log("Data acquired successfully");
+          } else {
+            setTimeout(queryConstrue(), 3000);
+          }
+        })
+        .catch(error => {
+          setTransErr(error);
+          setTimeout(queryConstrue(), 3000);
+        });
     }
 
-    query(params)
-
+    uri.length === 40 ? queryConstrue() : setTransErr('invalid URL')
   }, [])
+
+  useEffect(() => {
+    if (transErr) {
+      console.warn(transErr);
+    }
+  }, [transErr]);
 
   return (
     <div className="App">

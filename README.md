@@ -1,5 +1,6 @@
 # Riskometer APP
 A React app that serves as a webview in Xamarin App called Riskometer.
+This is a part of working system developed as a proof of concept by enthusiast community to help and/or prevent SARS-CoV-2 spread.
 
 Should be viewed from mobile, **Not styled to work on multitude of screen sizes**.
 

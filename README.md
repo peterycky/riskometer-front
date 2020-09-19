@@ -4,12 +4,12 @@ This is a part of working system developed as a proof of concept by enthusiast c
 
 Should be viewed from mobile, **Not styled to work on multitude of screen sizes**.
 
-Hosted on GH Page: https://peterycky.github.io/riskometer-front/
+Hosted on GH Pages: https://peterycky.github.io/riskometer-front/
+
+#### Note: To work properly, you should add a valid identifier key as URI parameter.
+#### Note: App status depends on servers status. If the server https://jsonvir.iwareprint.eu/ is unreachable, then app won't work. 🤭
 
 ---
-Note: To work properly, you should add a valid identifier key as URI parameter.
-
-Note: App status depends on servers status. If the server https://jsonvir.iwareprint.eu/ is unreachable, then app won't work. 🤭
 
 ## Available Scripts
 
